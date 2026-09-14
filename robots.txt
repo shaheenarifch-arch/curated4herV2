@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://curated4her.com/sitemap.xml
+Sitemap: https://www.curated4her.com/sitemap.xml
+Sitemap: https://curated4herV2.pages.dev/sitemap.xml
