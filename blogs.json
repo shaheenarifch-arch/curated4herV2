@@ -5,62 +5,35 @@
     "seoTitle": "EverLeakproof Review 2026: Leakproof Underwear for Women 50+",
     "description": "PFAS-free, OEKO-TEX certified leakproof underwear with odor control and up to 100ml of absorbency for everyday, period, and overnight protection.",
     "metaDescription": "Read our 2026 EverLeakproof review for women 50+. Learn about absorbency, PFAS-free materials, comfort, odor control, sizing, and overnight protection.",
-    "excerpt": "Looking for comfortable, dependable leakproof underwear after 50? Our EverLeakproof review covers absorbency, fabric safety, fit, odor control, washing, and overnight performance so you can decide whether it is right for your routine.",
+    "excerpt": "Looking for comfortable, dependable leakproof underwear after 50? Our EverLeakproof review covers absorbency, fabric safety, fit, odor control, washing, and overnight performance so you can compare options with confidence.",
     "url": "/everleakproof-leakproof-underwear-review.html",
     "image": "https://everleakproof.com/cdn/shop/files/everleakproof_hero.jpg",
     "brand": "EverLeakProof US",
     "awinmid": "121298",
     "awinaffid": "3067297",
-    "banners": [
-      "4699841",
-      "4727481",
-      "4727483",
-      "4699844",
-      "4699843"
-    ],
-    "tags": [
-      "leakproof underwear",
-      "incontinence underwear",
-      "women 50+",
-      "PFAS free",
-      "period underwear",
-      "overnight protection",
-      "odor control"
-    ],
+    "banners": ["4699841", "4727481", "4727483", "4699844", "4699843"],
+    "tags": ["leakproof underwear", "incontinence underwear", "women 50+", "PFAS free", "period underwear", "overnight protection", "odor control"],
     "date": "2026-05-13",
     "updated": "2026-09-17",
-    "seoKeywords": [
-      "best leakproof underwear for women over 50",
-      "EverLeakproof review 2026",
-      "PFAS-free leakproof underwear",
-      "absorbent underwear for light bladder leaks",
-      "overnight leakproof underwear"
-    ],
-    "keyTakeaways": [
-      "Designed for discreet everyday and overnight protection.",
-      "Advertised absorbency of up to 100ml, depending on size and use.",
-      "PFAS-free and OEKO-TEX certified materials are highlighted by the brand.",
-      "High-waist construction and odor-control features support all-day comfort."
-    ],
-    "faq": [
-      {
-        "question": "Is EverLeakproof underwear suitable for women over 50?",
-        "answer": "EverLeakproof is designed for adults who want discreet protection from period flow or light bladder leaks. Check the current size chart and absorbency guidance before ordering."
-      },
-      {
-        "question": "How much liquid can EverLeakproof underwear absorb?",
-        "answer": "The product is advertised as holding up to 100ml, but real-world performance varies by style, size, fit, movement, and the type of leak."
-      },
-      {
-        "question": "Is EverLeakproof underwear PFAS-free?",
-        "answer": "The brand describes its products as PFAS-free and OEKO-TEX certified. Review the product page for the latest materials and certification details before purchasing."
-      },
-      {
-        "question": "Can EverLeakproof underwear be worn overnight?",
-        "answer": "The high-waist, absorbent design is marketed for overnight protection. For heavier leakage, combine it with a backup product and follow the manufacturer's care instructions."
-      }
-    ],
-    "brand": "EverLeakProof US",
+    "seoKeywords": ["best leakproof underwear for women over 50", "EverLeakproof review 2026", "PFAS-free leakproof underwear", "absorbent underwear for light bladder leaks", "overnight leakproof underwear"],
+    "keyTakeaways": ["Designed for discreet everyday and overnight protection.", "Advertised absorbency of up to 100ml, depending on size and use.", "PFAS-free and OEKO-TEX certified materials are highlighted by the brand.", "High-waist construction and odor-control features support all-day comfort."],
+    "faq": [],
+    "seo": true,
+    "aeo": true
+  },
+  {
+    "id": "fall-beauty-self-care-uzari",
+    "title": "Fall Beauty Reset: Why Uzari Belongs in Your Seasonal Routine",
+    "seoTitle": "Fall Skincare and Self-Care Ideas Featuring Uzari",
+    "description": "Refresh fall skincare and self-care content with Uzari's travel bag, Glow Set, gifting ideas, and evergreen offers.",
+    "metaDescription": "Discover fall skincare, self-care, travel, and beauty content ideas featuring Uzari, including its $35 toiletry bag gift, free shipping, and Glow Set.",
+    "excerpt": "As routines shift for fall, Uzari offers timely ideas for skincare resets, self-care roundups, travel beauty, gifting, and everyday routines.",
+    "url": "/fall-beauty-self-care-uzari.html",
+    "brand": "Uzari",
+    "tags": ["fall skincare", "fall self-care", "Uzari", "beauty gifts", "Glow Set", "travel beauty"],
+    "date": "2026-09-17",
+    "updated": "2026-09-17",
+    "seoKeywords": ["fall skincare routine", "fall self-care ideas", "Uzari beauty", "skincare gift set", "fall beauty essentials"],
     "seo": true,
     "aeo": true
   }
