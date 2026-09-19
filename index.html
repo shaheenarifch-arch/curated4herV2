@@ -1,43 +1,276 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>React Artifact</title>
-  <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;[...]
-  .home-page-hero-images{max-width:1200px;margin:28px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.home-page-hero-images .image-tile{overflow:hidden;border-radius:18px;border:1px solid rgba(32,21,27,.08);background:#fff;box-shadow:0 12px 25px rgba(32,21,27,.06)}.home-page-hero-images img{display:block;width:100%;height:260px;object-fit:cover}.home-page-hero-images img:hover{transform:scale(1.02);transition:transform .25s ease}@media (max-width:640px){.home-page-hero-images img{height:200px}}</style>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Curated4Her — Elevated Fashion, Beauty, Hair & Gifts</title>
+
+  <meta
+    name="description"
+    content="Curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman. Discover thoughtfully selected products and guides from Curated4Her."
+  >
+
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+  >
+
+  <link
+    rel="canonical"
+    href="https://curated4her.com/"
+  >
+
+  <meta name="theme-color" content="#F8F3F0">
+
+  <!-- Open Graph -->
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+    property="og:title"
+    content="Curated4Her — Elevated Fashion, Beauty, Hair & Gifts"
+  >
+  <meta
+    property="og:description"
+    content="Thoughtfully curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman."
+  >
+  <meta
+    property="og:url"
+    content="https://curated4her.com/"
+  >
+  <meta
+    property="og:image"
+    content="https://curated4her.com/og-image.png"
+  >
+  <meta
+    property="og:site_name"
+    content="Curated4Her"
+  >
+
+  <!-- Twitter/X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+  <meta
+    name="twitter:title"
+    content="Curated4Her — Elevated Fashion, Beauty, Hair & Gifts"
+  >
+  <meta
+    name="twitter:description"
+    content="Thoughtfully curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman."
+  >
+  <meta
+    name="twitter:image"
+    content="https://curated4her.com/og-image.png"
+  >
+
+  <!-- Performance -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
+    body {
+      background: #F8F3F0;
+      color: #1A1A1A;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid #C48B8B;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    .font-serif {
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    .font-sans {
+      font-family: "Inter", sans-serif;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .focus:not-sr-only:focus {
+      position: fixed;
+      width: auto;
+      height: auto;
+      padding: 0.6rem 1rem;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+      z-index: 9999;
+    }
+
+    .home-page-hero-images {
+      max-width: 1200px;
+      margin: 28px auto 0;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 20px;
+    }
+
+    .home-page-hero-images .image-tile {
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(32, 21, 27, 0.08);
+      background: #fff;
+      box-shadow:
+        0 12px 25px rgba(32, 21, 27, 0.06);
+    }
+
+    .home-page-hero-images img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      transition: transform 0.25s ease;
+    }
+
+    .home-page-hero-images img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 640px) {
+      .home-page-hero-images img {
+        height: 200px;
+      }
+    }
+  </style>
+
+  <!-- Organization / Website structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Curated4Her",
+    "url": "https://curated4her.com/",
+    "logo": "https://curated4her.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "agents@getservices.ai",
+      "telephone": "+1-313-729-1534"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Curated4Her",
+    "url": "https://curated4her.com/"
+  }
+  </script>
 </head>
+
 <body>
-  <section class="home-page-hero-images" aria-label="Featured Curated4Her picks">
-    <div class="image-tile">
-      <img src="https://www.everleakproof.com/cdn/shop/files/everleakproof_hero.jpg" alt="EverLeakproof leakproof underwear hero image" loading="eager" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80';">
-    </div>
-    <div class="image-tile">
-      <img src="https://www.awin1.com/cshow.php?s=4860764&v=129433&q=612076&r=3067297" alt="Uzari beauty essentials offer image" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80';">
-    </div>
-    <div class="image-tile">
-      <img src="https://www.awin1.com/cshow.php?s=4885282&v=119629&q=614358&r=3067297" alt="Purty Body shapewear and wireless bras offer image" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80';">
-    </div>
-  </section>
+
+  <!-- React application mounts here -->
   <div id="root"></div>
-  
-  <script type="module">var td=Object.create;var{getPrototypeOf:nd,defineProperty:Go,getOwnPropertyNames:rd}=Object;var od=Object.prototype.hasOwnProperty;var xt=(e,t,n)=>{n=e!=null?td(nd(e)):{};l[...]
-`+ai+e}function li(e,t){if(!e||si)return"";si=!0;var n=Error.prepareStackTrace;Error.prepareStackTrace=void 0;try{if(t)if(t=function(){throw Error()},Object.defineProperty(t.prototype,"props",{set[...]
-`),i=r.stack.split(`
-`),a=o.length-1,s=i.length-1;1<=a&&0<=s&&o[a]!==i[s];)s--;for(;1<=a&&0<=s;a--,s--)if(o[a]!==i[s]){if(a!==1||s!==1)do if(a--,s--,0>s||o[a]!==i[s]){var l=`
-`+o[a].replace(" at new "," at ");return e.displayName&&l.includes("<anonymous>")&&(l=l.replace("<anonymous>",e.displayName)),l}while(1<=a&&0<=s);break}}}finally{si=!1,Error.prepareStackTrace=n}re[...]
-Error generating stack: `+i.message+`
-`+i.stack}return{value:e,source:t,stack:o,digest:null}}function Si(e,t,n){return{value:e,source:null,stack:n!=null?n:null,digest:t!=null?t:null}}function sa(e,t){try{console.error(t.value)}catch(n[...]
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
-        .font-serif { font-family: 'Cormorant Garamond', serif; }
-        .font-sans { font-family: 'Inter', sans-serif; }
-        html, body { overflow-x: hidden; max-width: 100vw; }
-        :focus-visible { outline: 2px solid #C48B8B; outline-offset: 2px; border-radius: 2px; }
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
-        .focus:not-sr-only:focus { position: fixed; width: auto; height: auto; padding: 0.6rem 1rem; margin: 0; overflow: visible; clip: auto; white-space: normal; z-index: 9999; }
-      `}),u("a",{href:"#main-content",className:"sr-only focus:not-sr-only focus:top-3 focus:left-3 bg-[#1A1A1A] text-white rounded-full text-[11px] tracking-widest uppercase",children:"Skip to content"}),u("div",{className:"min-h-screen bg-[#F8F3F0] text-[#1A1A1A]",children:[u("header",{className:"sticky top-0 z-40 border-b border-black/5 bg-[#F8F3F0]/90 backdrop-blur-md",children:[u("div",{className:"max-w-[1440px] mx-auto px-5 lg:px-8 h-20 flex items-center justify-between gap-4",children:[u("button",{onClick:()=>k("home"),className:"flex items-center gap-3 text-left",children:[u("div",{className:"w-11 h-11 rounded-full bg-[#1A1A1A] text-white flex items-center justify-center font-serif text-xl",children:"C"}),u("div",{children:[u("div",{className:"font-serif text-[24px] leading-none",children:"Curated4Her"}),u("div",{className:"text-[10px] uppercase tracking-[0.18em] text-black/50 mt-1",children:"Curated picks"})]})]}),u("nav",{className:"hidden md:flex items-center gap-7 text-[12px] uppercase tracking-[0.18em] text-black/70",children:[u("button",{onClick:()=>k("collections"),className:"hover:text-black",children:"Collections"}),u("button",{onClick:()=>k("guides"),className:"hover:text-black",children:"Guides"}),u("button",{onClick:()=>k("about"),className:"hover:text-black",children:"About"}),u("button",{onClick:()=>k("contact"),className:"hover:text-black",children:"Contact"})]}),u("div",{className:"flex items-center gap-3",children:[u("button",{onClick:()=>k("collections"),className:"hidden sm:inline-flex h-10 px-5 rounded-full border border-black/10 bg-white/80 text-[11px] uppercase tracking-[0.16em] text-black/80 hover:bg-white",children:"Shop now"}),u("button",{onClick:()=>k("about"),className:"h-10 w-10 rounded-full bg-black text-white flex items-center justify-center text-[11px] uppercase tracking-[0.14em] hover:bg-[#C48B8B] transition-colors",children:"Menu"})]})]})]}),u("main",{id:"main-content",className:"max-w-[1440px] mx-auto px-5 lg:px-8 pt-8 pb-20",children:[u("section",{className:"grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center pt-8 pb-12",children:[u("div",{children:[u("p",{className:"text-[11px] uppercase tracking-[0.22em] text-[#7A3E55] font-semibold",children:"Curated for modern living"}),u("h1",{className:"font-serif text-[56px] lg:text-[96px] leading-[0.9] tracking-[-0.05em] mt-4",children:"Your edit of elevated daily essentials."}),u("p",{className:"max-w-[60ch] text-[16px] leading-relaxed text-black/70 mt-5",children:"Premium curation for evening wear, hair, skincare, gifts and eyewear. Thoughtfully curated for the modern woman."}),u("div",{className:"flex gap-3 flex-wrap mt-7",children:[u("button",{onClick:()=>k("collections"),className:"h-12 px-7 rounded-full bg-[#1A1A1A] text-white text-[11px] uppercase tracking-[0.18em] hover:bg-[#C48B8B] transition-colors",children:"Shop the edit"}),u("button",{onClick:()=>k("guides"),className:"h-12 px-7 rounded-full border border-black/10 bg-white text-black text-[11px] uppercase tracking-[0.18em] hover:border-[#C48B8B]",children:"Explore guides"})]}),u("div",{className:"mt-8 flex items-center gap-6 text-[12px] uppercase tracking-[0.12em] text-black/60",children:[u("span",{children:"4.9/5 reviews"}),u("span",{children:"12 curated categories"}),u("span",{children:"Free shipping over $50"})]})]}),u("div",{className:"rounded-[32px] overflow-hidden border border-black/5 bg-white shadow-[0_30px_80px_rgba(51,20,33,0.08)]",children:[u("div",{className:"aspect-[4/5] relative overflow-hidden",children:[u("img",{src:"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",alt:"Woman with elegant beauty styling",className:"w-full h-full object-cover"}),u("div",{className:"absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-white/0"}),u("div",{className:"absolute bottom-0 left-0 right-0 p-6 text-white",children:[u("div",{className:"text-[10px] uppercase tracking-[0.22em] text-white/80",children:"Featured pick"}),u("div",{className:"font-serif text-[40px] leading-none mt-2",children:"Soft power, polished details."})]})]})]})]}),u("section",{className:"py-6",children:[u("div",{className:"flex items-center justify-between gap-4 mb-6",children:[u("div",{children:[u("p",{className:"text-[11px] uppercase tracking-[0.22em] text-black/50",children:"Popular categories"}),u("h2",{className:"font-serif text-[42px] leading-none mt-2",children:"Shop by mood"})]}),u("button",{onClick:()=>k("collections"),className:"hidden sm:inline-flex h-10 px-5 rounded-full border border-black/10 bg-white text-[11px] uppercase tracking-[0.16em] text-black/80 hover:border-[#C48B8B]",children:"View all"})]}) ,m("div",{className:"grid md:grid-cols-3 gap-4",children:[m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white p-3 shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",alt:"Evening wear styling",className:"h-56 w-full object-cover rounded-[20px]"}),u("div",{className:"px-2 py-4",children:[u("p",{className:"text-[10px] uppercase tracking-[0.18em] text-black/50",children:"Evening wear"}),u("p",{className:"font-serif text-[28px] mt-1",children:"Velvet & shine"})]})]),m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white p-3 shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",alt:"Beauty essentials and skincare",className:"h-56 w-full object-cover rounded-[20px]"}),u("div",{className:"px-2 py-4",children:[u("p",{className:"text-[10px] uppercase tracking-[0.18em] text-black/50",children:"Beauty"}),u("p",{className:"font-serif text-[28px] mt-1",children:"Glow rituals"})]})]),m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white p-3 shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",alt:"Gifts and accessories",className:"h-56 w-full object-cover rounded-[20px]"}),u("div",{className:"px-2 py-4",children:[u("p",{className:"text-[10px] uppercase tracking-[0.18em] text-black/50",children:"Gifts"}),u("p",{className:"font-serif text-[28px] mt-1",children:"Thoughtful picks"})]})])]})]}),u("section",{className:"py-12",children:[u("div",{className:"flex items-center justify-between gap-4 mb-6",children:[u("div",{children:[u("p",{className:"text-[11px] uppercase tracking-[0.22em] text-black/50",children:"Editor picks"}),u("h2",{className:"font-serif text-[42px] leading-none mt-2",children:"New in the edit"})]}),u("button",{onClick:()=>k("collections"),className:"hidden sm:inline-flex h-10 px-5 rounded-full border border-black/10 bg-white text-[11px] uppercase tracking-[0.16em] text-black/80 hover:border-[#C48B8B]",children:"Browse all"})]}) ,m("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-6",children:[m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1529963183134-61a90db47d9e?auto=format&fit=crop&w=1200&q=80",alt:"Luxury beauty product",className:"w-full h-72 object-cover"}),u("div",{className:"p-5",children:[u("div",{className:"text-[10px] uppercase tracking-[0.18em] text-[#7A3E55]",children:"Beauty"}),u("h3",{className:"font-serif text-[30px] leading-tight mt-2",children:"Skin-first routines"}),u("p",{className:"text-sm text-black/70 mt-3 leading-relaxed",children:"Hydration, glow and calming essentials made for everyday ease."}),u("button",{onClick:()=>k("category-Beauty"),className:"mt-4 text-[11px] uppercase tracking-[0.16em] text-black/80 hover:text-black",children:"Shop beauty →"})]})]),m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",alt:"Hair styling and wellness cabinet",className:"w-full h-72 object-cover"}),u("div",{className:"p-5",children:[u("div",{className:"text-[10px] uppercase tracking-[0.18em] text-[#7A3E55]",children:"Hair"}),u("h3",{className:"font-serif text-[30px] leading-tight mt-2",children:"Smooth, strong shine"}),u("p",{className:"text-sm text-black/70 mt-3 leading-relaxed",children:"Polished looks and nourishing care for your daily reset."}),u("button",{onClick:()=>k("category-Hair"),className:"mt-4 text-[11px] uppercase tracking-[0.16em] text-black/80 hover:text-black",children:"Shop hair →"})]})]),m("div",{className:"rounded-[28px] overflow-hidden border border-black/5 bg-white shadow-[0_20px_40px_rgba(0,0,0,0.04)]",children:[u("img",{src:"https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80",alt:"Statement fashion and accessories",className:"w-full h-72 object-cover"}),u("div",{className:"p-5",children:[u("div",{className:"text-[10px] uppercase tracking-[0.18em] text-[#7A3E55]",children:"Fashion"}),u("h3",{className:"font-serif text-[30px] leading-tight mt-2",children:"Statement layers"}),u("p",{className:"text-sm text-black/70 mt-3 leading-relaxed",children:"From elevated basics to standout silhouettes, refined pieces that go further."}),u("button",{onClick:()=>k("category-Fashion"),className:"mt-4 text-[11px] uppercase tracking-[0.16em] text-black/80 hover:text-black",children:"Shop fashion →"})]})])]})]}),u("section",{className:"py-12",children:[u("div",{className:"rounded-[32px] border border-[#E9D3CF] bg-[#FDF6F5] p-8 lg:p-10",children:[u("div",{className:"grid lg:grid-cols-[1fr_0.8fr] gap-8 items-center",children:[u("div",{children:[u("p",{className:"text-[11px] uppercase tracking-[0.22em] text-[#7A3E55] font-semibold",children:"Newsletter"}),u("h2",{className:"font-serif text-[42px] leading-none mt-3",children:"Fresh finds and quiet luxury, in your inbox."}),u("p",{className:"text-black/70 mt-4 max-w-[48ch]",children:"Get thoughtful recommendations on beauty, wellness, evening wear and gifting—without the noise."})]}),u("form",{className:"flex gap-2 flex-wrap",noValidate:!0,children:[u("label",{className:"sr-only",htmlFor:"newsletter-email",children:"Email address"}),u("input",{id:"newsletter-email",value:C,onChange:(p)=>d(p.target.value),placeholder:"Email address",className:"h-12 w-full min-w-[220px] rounded-full border border-black/10 bg-white px-5 text-sm text-black placeholder:text-black/40 focus:outline-none focus:border-[#C48B8B]",type:"email",required:!0}),u("button",{type:"submit",onClick:(p)=>V(p),className:"h-12 px-7 rounded-full bg-[#1A1A1A] text-white text-[11px] uppercase tracking-[0.18em] hover:bg-[#C48B8B] transition-colors",children:O?"Joining…":"Join now"}),u("p",{className:"w-full text-[11px] text-[#7A3E55] min-h-[1.25rem]",children:Vt})]})]})]})]}),u("footer",{className:"border-t border-black/5 bg-white",children:[m("div",{className:"max-w-[1440px] mx-auto px-5 lg:px-8 py-12 grid lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] gap-10",children:[m("div",{children:[u("div",{className:"font-serif text-[22px] font-semibold",children:"Curated4Her"}),u("p",{className:"text-[12px] text-black/60 mt-3 max-w-[32ch] leading-relaxed",children:"Premium curation for evening wear, hair, skincare, gifts and eyewear. Thoughtfully curated for the modern woman."}),m("div",{className:"mt-5 flex gap-3",children:[u("a",{href:"https://instagram.com",target:"_blank",rel:"noopener",className:"w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#C48B8B] transition-colors",children:u("svg",{width:"14",height:"14",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round",children:[u("rect",{x:"2",y:"2",width:"20",height:"20",rx:"5",ry:"5"}),u("circle",{cx:"12",cy:"12",r:"5"}),u("circle",{cx:"17.5",cy:"6.5",r:"0.5",fill:"currentColor"})]})}),u("a",{href:"https://pinterest.com",target:"_blank",rel:"noopener",className:"w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#C48B8B] transition-colors",children:u("svg",{width:"14",height:"14",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"1.5",children:[u("circle",{cx:"12",cy:"12",r:"10"}),u("path",{d:"M8 12c0-2 1.5-3.5 3-3.5S14 10 14 12s-1.5 4-3 4c-1 0-2-1-3-1"})]})}),u("a",{href:"https://facebook.com",target:"_blank",rel:"noopener",className:"w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#C48B8B] transition-colors",children:u("svg",{width:"14",height:"14",viewBox:"0 0 24 24",fill:"currentColor",children:[u("path",{d:"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"})]})}),u("a",{href:"https://tiktok.com",target:"_blank",rel:"noopener",className:"w-8 h-8 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#C48B8B] transition-colors",children:u("svg",{width:"14",height:"14",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"1.5",children:[u("path",{d:"M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"})]})})]}) ,m("div",{className:"mt-4 text-[11px] leading-relaxed text-black/60",children:["agents@getservices.ai",u("br",{}),"313-729-1534"]})]}),m("div",{children:[u("div",{className:"text-[11px] uppercase tracking-[0.14em] font-semibold mb-4",children:"Shop"}),m("div",{className:"space-y-2 text-[13px] text-black/70",children:[u("button",{onClick:()=>k("category-Fashion"),className:"block hover:text-black",children:"Fashion"}),u("button",{onClick:()=>k("category-Hair"),className:"block hover:text-black",children:"Hair"}),u("button",{onClick:()=>k("category-Beauty"),className:"block hover:text-black",children:"Beauty"}),u("button",{onClick:()=>k("category-Gifts"),className:"block hover:text-black",children:"Gifts"}),u("button",{onClick:()=>k("category-Accessories"),className:"block hover:text-black",children:"Accessories"})]})]}),m("div",{children:[u("div",{className:"text-[11px] uppercase tracking-[0.14em] font-semibold mb-4",children:"Explore"}),m("div",{className:"space-y-2 text-[13px] text-black/70",children:[u("button",{onClick:()=>k("collections"),className:"block hover:text-black",children:"Collections"}),u("button",{onClick:()=>k("guides"),className:"block hover:text-black",children:"Guides"}),u("button",{onClick:()=>k("about"),className:"block hover:text-black",children:"About"}),u("button",{onClick:()=>k("contact"),className:"block hover:text-black",children:"Contact"}),u("button",{onClick:()=>k("faq"),className:"block hover:text-black",children:"FAQ"})]})]}),m("div",{children:[u("div",{className:"text-[11px] uppercase tracking-[0.14em] font-semibold mb-4",children:"Legal"}),m("div",{className:"space-y-2 text-[13px] text-black/70",children:[u("button",{onClick:()=>k("disclosure"),className:"block hover:text-black",children:"Disclosure"}),u("button",{onClick:()=>k("privacy"),className:"block hover:text-black",children:"Privacy"}),u("button",{onClick:()=>k("terms"),className:"block hover:text-black",children:"Terms"}),u("button",{onClick:()=>k("sitemap"),className:"block hover:text-black",children:"Sitemap"}),u("button",{onClick:()=>k("robots"),className:"block hover:text-black",children:"Robots"})]})]})]}),u("div",{className:"border-t border-black/5 py-6 text-center text-[10px] uppercase tracking-[0.16em] text-black/40",children:"© 2025 Curated4Her • 10 expanded guides • All images via Unsplash with fallback • Affiliate disclosure applies"})]}),u("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"Curated4Her",url:"https://curated4her.com",logo:"https://curated4her.com/logo.png",contactPoint:{"@type":"ContactPoint",email:"agents@getservices.ai",telephone:"+1-313-729-1534"}})}})]})}ed.createRoot(document.getElementById("root")).render(u(jc.default.StrictMode,{children:u(hs,{})}));
-</script>
-  <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer"}}catch(e){}}for(var c=document.querySelectorAll("a"),r=0;r<c.length;r++)m(c[r]);})();</script>
+
+  <!--
+    IMPORTANT:
+    Keep your COMPLETE React production bundle here.
+
+    The JavaScript in the supplied file is truncated and contains
+    literal "[...]" sections. Those sections must be restored from
+    the original generated artifact.
+
+    Do NOT paste a shortened/truncated React bundle here.
+  -->
+
+  <script type="module">
+    /* COMPLETE ORIGINAL REACT BUNDLE GOES HERE */
+  </script>
+
+  <!-- External-link security -->
+  <script>
+    (function () {
+      document
+        .querySelectorAll('a[href]')
+        .forEach(function (link) {
+          try {
+            var url = new URL(
+              link.getAttribute('href'),
+              document.baseURI
+            );
+
+            if (
+              (url.protocol === 'http:' ||
+               url.protocol === 'https:') &&
+              url.host !== window.location.host
+            ) {
+              link.target = '_blank';
+              link.rel = 'noopener noreferrer';
+            }
+          } catch (error) {
+            // Ignore malformed URLs.
+          }
+        });
+    })();
+  </script>
 
 </body>
 </html>
+```
