@@ -1,276 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  background: #F8F3F0;
+  color: #1A1A1A;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+body {
+  font-family: "Inter", sans-serif;
+}
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
+img {
+  max-width: 100%;
+  display: block;
+}
 
-  <title>Curated4Her — Elevated Fashion, Beauty, Hair & Gifts</title>
+button, input {
+  font: inherit;
+}
 
-  <meta
-    name="description"
-    content="Curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman. Discover thoughtfully selected products and guides from Curated4Her."
-  >
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  <meta
-    name="robots"
-    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
-  >
+:focus-visible {
+  outline: 2px solid #C48B8B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
-  <link
-    rel="canonical"
-    href="https://curated4her.com/"
-  >
+.font-serif {
+  font-family: "Cormorant Garamond", serif;
+}
 
-  <meta name="theme-color" content="#F8F3F0">
+.font-sans {
+  font-family: "Inter", sans-serif;
+}
 
-  <!-- Open Graph -->
-  <meta
-    property="og:type"
-    content="website"
-  >
-  <meta
-    property="og:title"
-    content="Curated4Her — Elevated Fashion, Beauty, Hair & Gifts"
-  >
-  <meta
-    property="og:description"
-    content="Thoughtfully curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman."
-  >
-  <meta
-    property="og:url"
-    content="https://curated4her.com/"
-  >
-  <meta
-    property="og:image"
-    content="https://curated4her.com/og-image.png"
-  >
-  <meta
-    property="og:site_name"
-    content="Curated4Her"
-  >
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
-  <!-- Twitter/X -->
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
-  <meta
-    name="twitter:title"
-    content="Curated4Her — Elevated Fashion, Beauty, Hair & Gifts"
-  >
-  <meta
-    name="twitter:description"
-    content="Thoughtfully curated fashion, beauty, hair, skincare, gifts and accessories for the modern woman."
-  >
-  <meta
-    name="twitter:image"
-    content="https://curated4her.com/og-image.png"
-  >
+.focus:not-sr-only:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 0.6rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  z-index: 9999;
+}
 
-  <!-- Performance -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+.home-page-hero-images {
+  max-width: 1200px;
+  margin: 28px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
+.home-page-hero-images .image-tile {
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(32, 21, 27, 0.08);
+  background: #fff;
+  box-shadow: 0 12px 25px rgba(32, 21, 27, 0.06);
+}
 
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
+.home-page-hero-images img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
 
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      max-width: 100vw;
-    }
+.home-page-hero-images img:hover {
+  transform: scale(1.02);
+}
 
-    body {
-      background: #F8F3F0;
-      color: #1A1A1A;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    button,
-    input {
-      font: inherit;
-    }
-
-    :focus-visible {
-      outline: 2px solid #C48B8B;
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-
-    .font-serif {
-      font-family: "Cormorant Garamond", serif;
-    }
-
-    .font-sans {
-      font-family: "Inter", sans-serif;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    .focus:not-sr-only:focus {
-      position: fixed;
-      width: auto;
-      height: auto;
-      padding: 0.6rem 1rem;
-      margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
-      z-index: 9999;
-    }
-
-    .home-page-hero-images {
-      max-width: 1200px;
-      margin: 28px auto 0;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(220px, 1fr)
-      );
-      gap: 20px;
-    }
-
-    .home-page-hero-images .image-tile {
-      overflow: hidden;
-      border-radius: 18px;
-      border: 1px solid rgba(32, 21, 27, 0.08);
-      background: #fff;
-      box-shadow:
-        0 12px 25px rgba(32, 21, 27, 0.06);
-    }
-
-    .home-page-hero-images img {
-      display: block;
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      transition: transform 0.25s ease;
-    }
-
-    .home-page-hero-images img:hover {
-      transform: scale(1.02);
-    }
-
-    @media (max-width: 640px) {
-      .home-page-hero-images img {
-        height: 200px;
-      }
-    }
-  </style>
-
-  <!-- Organization / Website structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Curated4Her",
-    "url": "https://curated4her.com/",
-    "logo": "https://curated4her.com/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "email": "agents@getservices.ai",
-      "telephone": "+1-313-729-1534"
-    }
+@media (max-width: 640px) {
+  .home-page-hero-images img {
+    height: 200px;
   }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Curated4Her",
-    "url": "https://curated4her.com/"
-  }
-  </script>
-</head>
-
-<body>
-
-  <!-- React application mounts here -->
-  <div id="root"></div>
-
-  <!--
-    IMPORTANT:
-    Keep your COMPLETE React production bundle here.
-
-    The JavaScript in the supplied file is truncated and contains
-    literal "[...]" sections. Those sections must be restored from
-    the original generated artifact.
-
-    Do NOT paste a shortened/truncated React bundle here.
-  -->
-
-  <script type="module">
-    /* COMPLETE ORIGINAL REACT BUNDLE GOES HERE */
-  </script>
-
-  <!-- External-link security -->
-  <script>
-    (function () {
-      document
-        .querySelectorAll('a[href]')
-        .forEach(function (link) {
-          try {
-            var url = new URL(
-              link.getAttribute('href'),
-              document.baseURI
-            );
-
-            if (
-              (url.protocol === 'http:' ||
-               url.protocol === 'https:') &&
-              url.host !== window.location.host
-            ) {
-              link.target = '_blank';
-              link.rel = 'noopener noreferrer';
-            }
-          } catch (error) {
-            // Ignore malformed URLs.
-          }
-        });
-    })();
-  </script>
-
-</body>
-</html>
-```
+}
