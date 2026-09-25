@@ -18,7 +18,12 @@
       var vis = b.querySelectorAll(".pcard:not([hidden])").length > 0;
       b.hidden = !vis; if (vis) any = true;
     });
-    var sc = document.querySelector(".skin-cta");
+    document.querySelectorAll(".intent-band").forEach(function (h) {
+      var n = h.nextElementSibling, vis = false;
+      while (n && !n.classList.contains("intent-band")) { if (n.classList.contains("pblock") && !n.hidden) vis = true; n = n.nextElementSibling; }
+      h.hidden = !vis;
+    });
+    var sc = document.querySelector(".v-cta");
     if (sc) sc.hidden = !(cat === "All" || cat === "Beauty");
     if (typeof syncAll === "function") setTimeout(syncAll, 0);
     var empty = document.getElementById("empty");
@@ -33,7 +38,7 @@
   function syncSlider(sl) {
     var row = sl.querySelector(".prow"), prev = sl.querySelector(".prev"), next = sl.querySelector(".next");
     var max = row.scrollWidth - row.clientWidth - 4;
-    prev.hidden = row.scrollLeft <= 4;
+    prev.hidden = row.scrollLeft <= 24;
     next.hidden = row.scrollLeft >= max;
     sl.classList.toggle("at-end", row.scrollLeft >= max);
   }
@@ -53,7 +58,7 @@
   function syncAll() { document.querySelectorAll(".pslider").forEach(syncSlider); }
 
   // Partner jump links: reset filter so the block is visible
-  document.querySelectorAll(".pjump a, .brand-row a").forEach(function (a) {
+  document.querySelectorAll(".pjump a, .brand-row a, .intent").forEach(function (a) {
     a.addEventListener("click", function () { applyFilter("All"); });
   });
 
@@ -110,4 +115,35 @@
       }
     });
   }
+})();
+
+/* Broken image fallback: show a rose-gold tile with the product name */
+(function () {
+  function fb(img) {
+    var box = img.closest(".pc-img,.card-img,.story-img,.occ,.hero-art a,.mini,.p-banner,.spot-img,.feature-img");
+    if (!box || box.classList.contains("img-fallback")) return;
+    box.classList.add("img-fallback");
+    box.setAttribute("data-fallback", img.getAttribute("alt") || "Curated4Her");
+  }
+  document.querySelectorAll("img").forEach(function (img) {
+    if (img.complete && img.naturalWidth === 0 && img.src) fb(img);
+    img.addEventListener("error", function () { fb(img); });
+  });
+})();
+
+/* Highlight the partner currently in view in the sticky partner bar */
+(function () {
+  var links = document.querySelectorAll(".vendor-nav a");
+  if (!links.length || !("IntersectionObserver" in window)) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove("on"); });
+      var a = map[e.target.id];
+      if (a) { a.classList.add("on"); a.scrollIntoView({ block: "nearest", inline: "center" }); }
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  document.querySelectorAll(".vendor[id]").forEach(function (s) { io.observe(s); });
 })();
