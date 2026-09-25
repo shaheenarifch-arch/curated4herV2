@@ -131,6 +131,14 @@
   });
 })();
 
+/* Keep the sticky partner bar just below the sticky header */
+(function () {
+  var h = document.querySelector(".site-header");
+  if (!h) return;
+  function set() { document.documentElement.style.setProperty("--hdr", h.offsetHeight + "px"); }
+  set(); window.addEventListener("resize", set);
+})();
+
 /* Highlight the partner currently in view in the sticky partner bar */
 (function () {
   var links = document.querySelectorAll(".vendor-nav a");
@@ -142,7 +150,12 @@
       if (!e.isIntersecting) return;
       links.forEach(function (a) { a.classList.remove("on"); });
       var a = map[e.target.id];
-      if (a) { a.classList.add("on"); a.scrollIntoView({ block: "nearest", inline: "center" }); }
+      if (a) {
+        a.classList.add("on");
+        // Slide the partner strip sideways only; never move the page up or down
+        var strip = a.parentElement;
+        strip.scrollTo({ left: a.offsetLeft - strip.clientWidth / 2 + a.offsetWidth / 2, behavior: "smooth" });
+      }
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll(".vendor[id]").forEach(function (s) { io.observe(s); });

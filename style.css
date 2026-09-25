@@ -349,7 +349,7 @@ body{background:var(--paper)}
 @media (max-width:760px){.prow{margin:0 -20px;padding:6px 20px 20px;scroll-padding-inline:20px;gap:12px}.prow .pcard{flex-basis:70%}}
 .parrow{position:absolute;top:calc(50% - 60px);z-index:5;width:52px;height:52px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;font:500 22px/1 var(--sans);color:var(--ink);background:var(--rg);background-size:180% 180%;box-shadow:0 12px 26px -8px rgba(154,85,96,.6);transition:transform .2s,opacity .2s}
 .parrow:hover{transform:scale(1.08)}
-.parrow.next{right:-14px;animation:nudge 1.8s ease-in-out infinite}
+.parrow.next{right:-14px;animation:nudge 1.8s ease-in-out 3}
 .parrow.prev{left:-14px;background:#fff;box-shadow:0 10px 22px -10px rgba(43,31,33,.4)}
 .parrow[hidden]{display:none}
 @keyframes nudge{0%,100%{translate:0 0}50%{translate:5px 0}}
@@ -378,10 +378,10 @@ body{background:var(--paper)}
 /* ===== one section per vendor ===== */
 .shop-intro{padding-bottom:28px}
 .shop-intro .chips{margin-bottom:0}
-.vendor-nav{position:sticky;top:68px;z-index:30;background:rgba(251,245,242,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-block:1px solid var(--line)}
+.vendor-nav{position:sticky;top:var(--hdr,68px);z-index:30;background:rgba(251,245,242,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-block:1px solid var(--line)}
 .vendor-nav .pjump{margin:0;padding-block:10px}
 .vendor-nav .pjump a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-@media (max-width:960px){.vendor-nav{top:0}}
+
 .vendor{position:relative;padding:clamp(48px,7vw,86px) 0 clamp(36px,5vw,60px);background:var(--paper);border-top:0;scroll-margin-top:120px;overflow:hidden}
 .vendor.v-alt{background:#fff}
 .vendor+.vendor{border-top:1px solid rgba(183,110,121,.18)}
@@ -443,3 +443,7 @@ body{background:var(--paper)}
 .why{margin:-4px 0 12px;font:600 12px/1.4 var(--sans);color:var(--cherry);display:flex;gap:6px}
 .why span{flex:none;width:18px;height:18px;border-radius:50%;background:var(--rg);color:var(--ink);display:grid;place-items:center;font-size:11px}
 .pcard .badge{font-weight:700}
+
+/* v16 fixes: sections land below both sticky bars; fade hints that the phone menu scrolls */
+.vendor,.pblock,.intent-band{scroll-margin-top:calc(var(--hdr,68px) + 64px)}
+@media (max-width:960px){.nav{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}}
