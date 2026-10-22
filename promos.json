@@ -1,0 +1,67 @@
+{
+  "updated": "2026-10-22",
+  "promos": [
+    {
+      "mid": "102013",
+      "brand": "Zlike Hair",
+      "headline": "Halloween presale: 14% off sitewide",
+      "code": "HA14",
+      "ends": "2026-10-31",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+      "id": "102013-ha14"
+    },
+    {
+      "mid": "102013",
+      "brand": "Zlike Hair",
+      "headline": "Extra $30 off orders over $200",
+      "code": "HA30",
+      "ends": "2026-10-31",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+      "id": "102013-ha30"
+    },
+    {
+      "mid": "102013",
+      "brand": "Zlike Hair",
+      "headline": "Extra $50 off orders over $300",
+      "code": "HA50",
+      "ends": "2026-10-31",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+      "id": "102013-ha50"
+    },
+    {
+      "mid": "129553",
+      "brand": "Jumy Bee",
+      "headline": "25% off all haircare for Halloween",
+      "code": "HALLOWEEN25",
+      "ends": "2026-10-31",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+      "id": "129553-halloween25"
+    },
+    {
+      "mid": "129553",
+      "brand": "Jumy Bee",
+      "headline": "Halloween sale: 15% off",
+      "code": "BOO15",
+      "details": "Smoothing treatments, Hair Botox and repair essentials.",
+      "ends": "2026-10-31",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+      "id": "129553-boo15"
+    },
+    {
+      "mid": "129433",
+      "brand": "Uzari Skincare",
+      "headline": "Free $35 toiletry bag on $100+ orders",
+      "details": "Plus free shipping on orders over $50. No code needed.",
+      "ends": "2026-11-01",
+      "source": "manual",
+      "url": "https://www.awin1.com/cread.php?awinmid=129433&awinaffid=3067297",
+      "id": "129433-free-35-toiletry-bag-on-100-orders",
+      "code": ""
+    }
+  ]
+}
