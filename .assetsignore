@@ -1,0 +1,7 @@
+# Files Cloudflare should NOT publish as part of the site.
+# Docs: https://developers.cloudflare.com/workers/static-assets/binding/#ignoring-assets
+.git
+.github
+.assetsignore
+wrangler.jsonc
+node_modules

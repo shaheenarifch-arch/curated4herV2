@@ -1,0 +1,12 @@
+// Cloudflare Workers config for curated4her.com (static assets only).
+// Mirrors what `wrangler deploy` auto-detected for production
+// (Framework: Static, Output Directory: .) so PR preview builds
+// (`wrangler versions upload`) work too.
+// Docs: https://developers.cloudflare.com/workers/static-assets/
+{
+  "name": "curated4herv2",
+  "compatibility_date": "2026-10-30",
+  "assets": {
+    "directory": "."
+  }
+}
