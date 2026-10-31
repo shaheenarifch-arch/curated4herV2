@@ -47,5 +47,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 8.77
+  },
+  {
+    "keyword": "Women's style essentials complete guide: dresses, wigs, skincare and gifts",
+    "title": "Women's Style Essentials Complete Guide: Dresses, Wigs, Skincare",
+    "description": "Women's style essentials complete guide: dresses, wigs, skincare and gifts shows how to choose, size, and match each category with confidence.",
+    "file": "women-s-style-essentials-complete-guide-dresses-wigs-skincare-and-gifts.html",
+    "date": "2026-10-31",
+    "archetype": "authority_guide",
+    "archetype_confidence": 0.97,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 9.24
   }
 ]
