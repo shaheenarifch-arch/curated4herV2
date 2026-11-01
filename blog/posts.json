@@ -61,5 +61,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 9.24
+  },
+  {
+    "keyword": "how to style vintage 1920s flapper accessories",
+    "title": "How to Style Vintage 1920s Flapper Accessories",
+    "description": "Learn how to style vintage 1920s flapper accessories with this step-by-step guide covering headbands, gloves, jewelry, hair and common styling mistakes.",
+    "file": "how-to-style-vintage-1920s-flapper-accessories.html",
+    "date": "2026-11-01",
+    "archetype": "how_to",
+    "archetype_confidence": 0.85,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": false,
+    "eeat_score": 100,
+    "seo_aeo_score": 8.33
   }
 ]
